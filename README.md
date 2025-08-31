@@ -53,32 +53,6 @@ uber/
 └── README.md           # Project documentation
 ```
 
-## 🚀 How to Run
-
-1. **Clone or Download** the project files
-2. **Open** `index.html` in your web browser
-3. **View** the complete case study presentation
-
-### Requirements
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- No additional dependencies or setup required
-
-## 📱 Responsive Design
-
-The page is fully responsive and optimized for:
-- **Desktop**: Full Figma design layout (1512px+)
-- **Tablet**: Adaptive layout (768px - 1200px)
-- **Mobile**: Mobile-optimized view (< 768px)
-
-## 🎨 Design Fidelity
-
-This implementation maintains **100% fidelity** to the original Figma design:
-- ✅ Exact typography and font weights
-- ✅ Precise spacing and layout positioning
-- ✅ Identical image dimensions and placement
-- ✅ Matching color scheme and visual hierarchy
-- ✅ Same content structure and information flow
-
 ## 📈 Business Impact
 
 The dashboard empowers Uber's strategy & operations teams to:
@@ -87,18 +61,10 @@ The dashboard empowers Uber's strategy & operations teams to:
 - **Enhance rider experience** via reduced wait times
 - **Strengthen digital ecosystem** with Uber Pay-first strategies
 
-## 🔧 Customization
-
-To modify the case study:
-1. **Content**: Edit text in `index.html`
-2. **Styling**: Adjust CSS in `styles.css`
-3. **Images**: Replace dashboard screenshots in `images/` folder
-4. **Layout**: Modify CSS positioning and dimensions
-
-## 📄 License
 
 This project is created for educational and portfolio purposes. All Uber branding and data insights are used for demonstration only.
 
 ---
 
 **Built with precision** to match the Figma design exactly, ensuring professional presentation quality for your coffee case study.
+
