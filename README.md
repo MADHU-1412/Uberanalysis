@@ -30,26 +30,17 @@ This case study analyzes 103,728 Uber trip records to uncover:
 - **Payment Strategy**: Enhance Uber Pay ecosystem
 - **Operational Efficiency**: Route optimization and pooling promotion
 
-## 🛠️ Technical Details
-
-### Design Specifications
-- **Layout**: Exact match to Figma design (1512px × 7662px)
-- **Typography**: Lato (400, 500, 600, 700, 800) and Inter (400)
-- **Colors**: Black (#000000) text on white (#FFFFFF) background
-- **Images**: High-quality dashboard screenshots with precise positioning
-
 ### File Structure
 ```
 uber/
 ├── index.html          # Main HTML structure
 ├── styles.css          # Exact Figma design styling
-├── images/             # Dashboard screenshots
-│   ├── hero-background-258446.png
-│   ├── uber-logo-3e23a9.png
-│   ├── overview-dashboard-4a8e5e.png
-│   ├── time-analysis-620525.png
-│   ├── trip-details-1.png
-│   └── trip-details-2-7bae5a.png
+├── hero-background-258446.png
+├── uber-logo-3e23a9.png
+├── overview-dashboard-4a8e5e.png
+├── time-analysis-620525.png
+├── trip-details-1.png
+└── trip-details-2-7bae5a.png
 └── README.md           # Project documentation
 ```
 
@@ -62,9 +53,5 @@ The dashboard empowers Uber's strategy & operations teams to:
 - **Strengthen digital ecosystem** with Uber Pay-first strategies
 
 
-This project is created for educational and portfolio purposes. All Uber branding and data insights are used for demonstration only.
 
----
-
-**Built with precision** to match the Figma design exactly, ensuring professional presentation quality for your coffee case study.
 
