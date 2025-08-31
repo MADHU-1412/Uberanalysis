@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Data Analysis - Coffee Case Study</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <button id="backToTop" title="Go to top">⬆</button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="images/hero-background-258446.png" alt="Hero Background" class="hero-bg-image">
+        </div>
+        <div class="hero-content"><div class="hero-box">
+            <div class="hero-text">
+                <h1 class="hero-title">Uber Data Analysis</h1>
+                <p class="hero-subtitle">An Interactive Power BI Dashboard</p>
+            </div>
+            <div class="hero-logo">
+                <img src="images/uber-logo-3e23a9.png" alt="Uber Logo" class="uber-logo">
+            </div></div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Problem Statement & Process Section -->
+        <section class="problem-process">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Problem Statement</h2>
+                    <p>  Uber generates millions of rides daily, but raw data hides actionable opportunities.
+                    My goal was to analyze 103,728 trip records to uncover demand patterns, revenue drivers, and customer behavior — ultimately helping improve driver allocation, rider experience, and profitability.</p>
+                    
+                    <h2>Process</h2>
+                    <h3>🔹 Data Preparation</h3>
+                    <ul>
+                        <li>Cleaned 103,728 rows of data (removed duplicates & nulls).</li>
+                        <li>Standardized location names for consistency.</li>
+                        <li>Engineered time features (hour, day, weekday/weekend) for trend & forecasting.</li>
+                    </ul>
+                    
+                    <h3>🔹 Tools & Techniques</h3>
+                    <ul>
+                        <li>Power BI: dashboard creation, modeling.</li>
+                        <li>DAX: KPIs (Bookings, Avg Fare, Distance, Trip Time).</li>
+                        <li>Advanced Analysis:</li>
+                        <ul>
+                            <li>Forecasting ride demand (time-series).</li>
+                            <li>Segmentation (weekday commuters vs. weekend leisure).</li>
+                            <li>Fare vs. Distance correlation → pricing patterns</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboards Section -->
+        <section class="dashboards">
+            <div class="content-wrapper">
+                <h2 class="dashboards-title">📈 Dashboards</h2>
+                
+                <!-- Overview Analysis -->
+                <div class="dashboard-group">
+                    <h3 class="dashboard-title">1. Overview Analysis</h3>
+                    <div class="dashboard-content">
+                        <div class="dashboard-image">
+                            <img src="images/overview-dashboard-4a8e5e.png" alt="Overview Dashboard" class="dashboard-img">
+                        </div>
+                        <div class="dashboard-text">
+                            <p><strong>Vehicle Type:</strong> UberX dominated trip volume and revenue, while premium rides (Uber Black, Uber Comfort) contributed fewer rides but higher average fares.</p>
+                            
+                            <p><strong>Payments:</strong> Majority of trips were paid via Uber Pay, highlighting a strong preference for cashless transactions.</p>
+                            
+                            <p><strong>Locations:</strong> Frequent pickup/drop-off points included Penn Station, Madison Square West, and Upper East Side.</p>
+                            
+                            <h4>KPIs:</h4>
+                            <ul>
+                                <li>Total Bookings: 103.7K</li>
+                                <li>Total Booking Value: $1.6M</li>
+                                <li>Avg Booking Value: $15</li>
+                                <li>Total Distance: 349K miles</li>
+                                <li>Avg Trip Time: 16 minutes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time Analysis -->
+                <div class="dashboard-group">
+                    <h3 class="dashboard-title">2. Time Analysis</h3>
+                    <div class="dashboard-content">
+                        <div class="dashboard-image">
+                            <img src="images/time-analysis-620525.png" alt="Time Analysis Dashboard" class="dashboard-img">
+                        </div>
+                        <div class="dashboard-text">
+                            <p><strong>Peak Hours:</strong> Bookings consistently rose from 8 AM – 8 PM, with the midday period showing the highest demand.</p>
+                            
+                            <p><strong>Weekly Trend:</strong></p>
+                            <ul>
+                                <li>Saturday & Sunday had the highest trips (weekend peak).</li>
+                                <li>Friday dipped slightly compared to weekends, likely due to late-night rides shifting into Saturday.</li>
+                            </ul>
+                            
+                            <p><strong>Heatmap Patterns:</strong> Clear morning (8–10 AM) and evening (5–7 PM) spikes, reflecting commuter behavior.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trip Details -->
+                <div class="dashboard-group">
+                    <h3 class="dashboard-title">3. Trip Details</h3>
+                    <div class="dashboard-content">
+                        
+                        <div class="dashboard-image" >
+                            <img src="images/trip-details-2-7bae5a.png" alt="Trip Details Dashboard 2" class="dashboard-img">
+                        </div>
+                        <div class="dashboard-text">
+                            <div class="para">
+                            <p>The dataset allowed drill-down into individual trip metrics (Trip ID, Vehicle Type, Fare, Distance, Pickup & Drop-off).</p>
+                            
+                            <p><strong>Example:</strong> A trip from LaGuardia Airport → Midtown cost around $27 for ~9 miles (UberX).</p>
+                            
+                            <p>This trip-level visibility supports deep-dive analysis into customer behavior, route preferences, and pricing fairness.</p>
+                            </div>
+                        </div>
+                        <div class="dashboard-image">
+                                <video class="dashboard-vid" controls autoplay muted loop>
+                                <source src="images/uber.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section class="recommendations">
+            <div class="content-wrapper">
+                <h2>Recommendations</h2>
+                
+                <div class="recommendation-item">
+                    <h3>📍 Driver Allocation</h3>
+                    <p>Increase supply in hotspots (Penn Station, Midtown, Upper East Side).</p>
+                    <p><strong>Result:</strong> Cut wait times by ~12% in commuter hours.</p>
+                </div>
+
+                <div class="recommendation-item">
+                    <h3>💰 Revenue Optimization</h3>
+                    <p>Target riders with premium upgrade offers.</p>
+                    <p><strong>Projected lift:</strong> Avg booking value from $15 → $17.7 (+18%).</p>
+                </div>
+
+                <div class="recommendation-item">
+                    <h3>📊 Payment Strategy</h3>
+                    <p>Enhance Uber Pay perks → lock in high-value users, reduce cash-handling costs.</p>
+                </div>
+
+                <div class="recommendation-item">
+                    <h3>🚦 Operational Efficiency</h3>
+                    <p>Promote pooling along frequent commuter routes → Lower East Side → Crown Heights North.</p>
+                </div>
+
+                <div class="business-impact">
+                    <h3>Business Impact</h3>
+                    <p>This dashboard empowers Uber's strategy & operations teams to:</p>
+                    <ul>
+                        <li>Anticipate demand and pre-position drivers.</li>
+                        <li>Boost revenue by optimizing product mix.</li>
+                        <li>Enhance rider experience via reduced wait times.</li>
+                        <li>Strengthen digital ecosystem with Uber Pay-first strategies.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    const btn = document.getElementById("backToTop");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+    btn.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    
+</script>
+
+</html>

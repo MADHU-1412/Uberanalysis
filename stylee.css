@@ -1,0 +1,476 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh; /* responsive instead of fixed */
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+.hero-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(-80px);
+}
+
+.hero-box {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.hero-text {
+    text-align: center;
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.hero-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: clamp(32px, 6vw, 100px); /* responsive scaling */
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: clamp(18px, 3vw, 32px);
+    line-height: 1.21;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+}
+
+.hero-logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-top: 14px;
+}
+
+.uber-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Main Content */
+.main-content {
+    width: 100%;
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1311px;
+    margin: 0 auto;
+    padding: 0 99px;
+}
+
+/* Problem Statement & Process Section */
+.problem-process {
+    padding: 60px 0px;
+    padding-bottom: 0px;
+}
+
+.text-content {
+    width: 100%;
+}
+
+.text-content h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.text-content h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #000000;
+    margin: 20px 0 20px 0;
+    text-indent: 10px;
+}
+
+.text-content p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.246;
+    letter-spacing: 1.3%;
+    color: #000000;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    text-align: justify;
+    padding: 0 40px;
+}
+
+.text-content ul {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.text-content li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.246;
+    letter-spacing: 1%;
+    color: #000000;
+    margin-bottom: 10px;
+    position: relative;
+    list-style: none;
+    padding-left: 32px;
+    margin-left: 40px;
+}
+
+.text-content li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 28px;
+    color: #000;
+}
+
+.text-content ul ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Dashboards Section */
+.dashboards {
+    padding: 20px 0;
+}
+
+.dashboards-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.dashboard-group {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.dashboard-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 20px;
+    text-indent: 40px;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard-image,
+.dashboard-text,
+.dashboard-vid {
+    flex: 1 1 90%;
+}
+
+.para {
+    padding: 20px 0;
+}
+
+.dashboard-img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.dashboard-vid {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    padding-bottom: 20px;
+}
+
+.dashboard-text {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.dashboard-text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.45;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.dashboard-text h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #000000;
+    margin: 20px 0 10px 0;
+}
+
+.dashboard-text ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.dashboard-text li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.45;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.dashboard-img:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Recommendations Section */
+.recommendations {
+    padding: 35px 0;
+}
+
+.recommendations h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.recommendation-item {
+    margin-bottom: 30px;
+}
+
+.recommendation-item h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 15px;
+    text-indent: 40px;
+}
+
+.recommendation-item p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #000000;
+    margin-bottom: 10px;
+    text-indent: 60px;
+}
+
+.business-impact {
+    margin-top: 40px;
+}
+
+.business-impact h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.business-impact p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #000000;
+    margin-bottom: 15px;
+    text-indent: 30px;
+}
+
+.business-impact ul {
+    margin-left: 40px;
+    padding-left: 20px;
+}
+
+.business-impact li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.4;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Back to Top */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30%;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+#backToTop:hover {
+    background: #333;
+}
+
+/* Responsive Design */
+
+/* Large Screens */
+@media (max-width: 1600px) {
+    .content-wrapper {
+        padding: 0 50px;
+    }
+    .hero-title {
+        font-size: clamp(32px, 5vw, 80px);
+    }
+    .hero-subtitle {
+        font-size: clamp(16px, 2vw, 28px);
+    }
+}
+
+/* Tablets */
+@media (max-width: 1200px) {
+    .content-wrapper {
+        padding: 0 30px;
+    }
+    .hero-title {
+        font-size: clamp(28px, 4vw, 60px);
+    }
+    .hero-subtitle {
+        font-size: 22px;
+    }
+    .text-content p,
+    .text-content li {
+        font-size: 24px;
+    }
+    .dashboard-text p,
+    .dashboard-text li {
+        font-size: 22px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+    }
+    .hero-content {
+        max-width: 90%;
+    }
+    .hero-title {
+        font-size: 28px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    .hero-logo {
+        max-width: 200px;
+    }
+    .content-wrapper {
+        padding: 0 15px;
+    }
+    .text-content p,
+    .text-content li {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .dashboard-text p,
+    .dashboard-text li {
+        font-size: 18px;
+    }
+    .recommendation-item p,
+    .business-impact p,
+    .business-impact li {
+        font-size: 16px;
+    }
+}
