@@ -14,8 +14,15 @@ This case study analyzes 103,728 Uber trip records to uncover:
 
 ### 📊 Interactive Dashboards
 - **Overview Analysis**: Vehicle type performance, payment methods, and key KPIs
+  <img width="1366" height="727" alt="trip-details-1" src="https://github.com/user-attachments/assets/fbf71d9e-2b7a-4f1c-8faa-ad7b00ae89f2" />
+
 - **Time Analysis**: Peak hours, weekly trends, and commuter patterns
+  <img width="968" height="590" alt="time-analysis-620525 (1)" src="https://github.com/user-attachments/assets/be1a8141-cac2-49b8-b1a2-61234f0c547e" />
+
 - **Trip Details**: Individual trip metrics and route analysis
+<img width="971" height="590" alt="trip-details-2-7bae5a" src="https://github.com/user-attachments/assets/67a96977-32d4-4402-80f2-cd92c8e80b32" />
+
+
 
 ### 🔍 Data Insights
 - Total Bookings: 103.7K
@@ -51,6 +58,7 @@ The dashboard empowers Uber's strategy & operations teams to:
 - **Boost revenue** by optimizing product mix
 - **Enhance rider experience** via reduced wait times
 - **Strengthen digital ecosystem** with Uber Pay-first strategies
+
 
 
 
